@@ -5,7 +5,7 @@ Ecommerce page !
 # Sobre o projeto - About the project
 Meu primeiro projeto front-end, totalmente responsivo,  desenvolvido para me apresentar minha pagina Ecommerce para teste de vaga Front-end.
 <br>
-My first front-end project, fully responsive, developed to introduce myself and show some of my knowledge in Front-end.
+
  
 Link do projeto - 
 -----------------------------
