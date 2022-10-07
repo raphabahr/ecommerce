@@ -1,4 +1,7 @@
 @import url(./swiper.css);
+@import url(./stars.css);
+@import url(./product.css);
+@import url(./reset.css);
 
 html {
   scroll-behavior: smooth;
@@ -56,8 +59,9 @@ header {
   display: flex;
   align-items: center;
   background-color: white;
-  padding: 5px 5px;
   width: 80%;
+  height: 2em;
+  border: 1px solid black;
 }
 
 .searchInput {
@@ -70,6 +74,10 @@ header {
 
 .searchInput::placeholder {
   color: black;
+}
+
+.searchIcon {
+  padding-left: 0.5em;
 }
 
 #hrHeader {
@@ -92,6 +100,7 @@ header {
 
 .cart__container {
   background-color: gray;
+  height: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,6 +113,7 @@ header {
 #cart {
   padding: 0 0.5em 0 0;
   margin: 0;
+  font-size: 16px;
 }
 
 
@@ -119,6 +129,8 @@ header {
 .gallery {
   padding: 50px 50px 0 50px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .galleryItem {
@@ -141,6 +153,18 @@ header {
   margin-block-start: 0.1em;
 }
 
+.shopTitle {
+  text-align: center;
+  margin: 0;
+  padding-top: 1.5em;
+}
+
+.shop__text {
+  text-align: center;
+  padding: 0.5em 10em 1.5em 10em;
+  margin: 0;
+}
+
 footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -150,19 +174,26 @@ footer {
 
 .footerLeft {
   display: flex;
+  width: 70%;
   justify-content: space-between;
   padding-top: 2em;
 }
 
 #navFooter {
   display: flex;
+  justify-content: center;
   width: 100%;
-  padding: 0;
+  padding: 0 1em 0 0;
 }
 
 #navFooter a {
   text-decoration: none;
   color: gray;
+}
+
+#navFooter a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .container__shop {
@@ -173,19 +204,20 @@ footer {
 
 .newsTitle {
   color: gray;
-  padding-left: 50px;
+  padding: 0 0 10px 50px;
   margin: 0;
 }
 
 .fMenuTitle {
   font-size: 16px;
-  color: black;
+  color: white;
+  width: 120px;
 }
 
 .fMail {
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -203,10 +235,14 @@ footer {
 .newsletter {
   display: flex;
   flex-direction: row;
+  border-bottom: 5px solid grey;
+  justify-content: center;
+  align-items: center;
 }
 
 .mewsletter__container {
   width: 50%;
+  padding-top: 1em;
 }
 
 .newsletter__text {
@@ -215,22 +251,18 @@ footer {
   font-weight: 300;
   padding: 0 0 2em 50px;
   margin: 0;
-
 }
 
 .footerRight {
   flex: 1;
   padding: 50px;
   display: flex;
-
   justify-content: space-between;
 }
 
 .footerMenu {
   padding-left: 3.5em;
 }
-
-
 
 .fIcons{
   display: flex;
@@ -253,19 +285,25 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 15%;
+  height: 20px;
+  border: none;
+  color: white;
+  margin: 0 1em;
 }
 
 .fIcon{
   width: 20px;
   height: 20px;
   margin-right: 10px;
+
 }
 
 .copyright{
   font-weight: 300;
   font-size: 14px;
   color: white;
+  padding: 1em 0 0 2em;
 }
 
 .footerCopyRight {
@@ -275,14 +313,15 @@ footer {
 
 .footer__adress {
   color: gray;
-  padding-left: 1em;
+  width: 350px;
+  margin: 0;
 }
 
 .footer__logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 40%;
   padding: 2em 0 0 2em;
 }
 
@@ -301,7 +340,7 @@ footer {
 .logo {
   max-width: 200px;
   max-height: 200px;
-  padding-left: 4em;
+  padding-left: 2em;
 }
 
 .container__copyright {
@@ -313,7 +352,5 @@ footer {
 .container__copyright p {
   padding: 0 0 0 3em;
 }
-
-
 
 /* -------------------------------media querys------------------------------------- */
