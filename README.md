@@ -15,7 +15,7 @@ Link do projeto -
 
 ## Métodos - Methods
 
-* Mobile first
+* Desktop first
 
 ## Serviços usados - Services Used
 
