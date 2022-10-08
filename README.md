@@ -3,7 +3,7 @@ Ecommerce page !
 # Ecommerce page - Raphael Bahr - In progress
 
 # Sobre o projeto - About the project
-Meu primeiro projeto front-end, totalmente responsivo,  desenvolvido para me apresentar minha pagina Ecommerce para teste de vaga Front-end.
+Meu primeiro projeto ecommerce front-end, totalmente responsivo,  desenvolvido para me apresentar minha pagina Ecommerce para teste de vaga Front-end.
 <br>
 
  
@@ -15,7 +15,7 @@ Link do projeto -
 
 ## Métodos - Methods
 
-* Mobile first
+* Desktop first
 
 ## Serviços usados - Services Used
 
