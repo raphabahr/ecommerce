@@ -1,13 +1,3 @@
-footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #001720;
-    align-items: center;
-    background-image: url(/assets/img/footerbkfundo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #aboutHR {
     width: 100%;
     padding: 0;
@@ -22,7 +12,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     width: 40%;
-    padding: 2em 0 0 2em;
+    padding: 0 0 0 2em;
 }
 
 .buttonLogo {
@@ -116,4 +106,57 @@ footer {
 
 .container__copyright p {
     padding: 0 0 0 3em;
+}
+
+@media screen and (max-width:480px) {
+
+    .aboutHR {
+        display: none;
+        margin: 0;
+    }
+
+    .footer__logo {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .footerLeft {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__adress {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #navFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    .footerMenu {
+        padding: 0;
+    }
+
+    .fMenuTitle {
+        font-size: 15px;
+    }
+
+    .fList {
+        margin: 0;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
 }

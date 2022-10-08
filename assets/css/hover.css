@@ -12,7 +12,6 @@
 	}
 }
 
-
 .HOVER {
 	--width: 100%;
 	--time: 0.7s;
@@ -21,6 +20,8 @@
 	display: inline-block;
 	height: 1em;
 	padding: 1em;
+	border: 1px white solid;
+	border-radius: 20px;
 
 	color: white;
 	background: #222;
@@ -35,7 +36,7 @@
 }
 
 .HOVER:hover text {
-	color: #222;
+	color: blue;
 }
 
 .HOVER span {
@@ -77,4 +78,11 @@
 	bottom: 10px;
 
 	font-size: 1rem;
+}
+
+@media screen and (max-width:480px) {
+
+	.HOVER {
+		padding: 0.4em;
+	}
 }

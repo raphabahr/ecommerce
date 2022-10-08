@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     background-color: white;
-    width: 80%;
+    width: 300px;
     height: 2em;
     border: 1px solid black;
 }
@@ -42,11 +42,17 @@
     padding-left: 10em;
 }
 
+.navBottom h3:hover {
+    color: white;
+}
+
 .menuItem {
     margin-right: 50px;
     cursor: pointer;
     color: lightgray;
     font-weight: 400;
+    border-right: 3px solid grey;
+    padding-right: 1.1em;
 }
 
 .fa-solid, .fa-cart-shopping {
@@ -63,9 +69,29 @@
 }
 
 #cart {
+    color: white;
     padding: 0 0.5em 0 0;
     margin: 0;
     font-size: 16px;
+}
+
+#cart:hover {
+    color: black;
+}
+
+.cartText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cartText:hover {
+    background: white;
+    color: black;
 }
 
 .navItem {
@@ -112,4 +138,108 @@
     display: flex;
     justify-content: center;
     padding-bottom: 4em;
+}
+
+.container__shop text {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.cartText__mobile {
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+
+    #headerNav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerSearch {
+        width: 50%;
+        padding: 0;
+    }
+
+    .navBottom {
+        width: 60%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartText {
+        width: 50%;
+    }
+
+    .navBottom {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menuItem {
+        border: none;
+        margin: 0;
+        padding: 0 0 0.2em 0;
+        font-size: 16px;
+    }
+
+    .navItem {
+        font-size: 12px;
+    }
+
+    .navItem h1 {
+        font-size: 16px;
+    }
+
+    .navItem img {
+        width: 50%;
+    }
+
+    .cartText {
+        display: none;
+    }
+
+    .cartText__mobile {
+        display: block;
+    }
+
+    .cartText__mobile  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: gray;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        height: 20%;
+    }
+
+    .cartText__mobile:hover {
+        background: white;
+        color: black;
+    }
+
+    .container__shop {
+        padding: 0 0 0.5em 0;
+    }
+
+    .container__shop {
+        font-size: 16px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .galleryItem {
+        width: 50%;
+        margin: 0;
+        padding: 1em;
+    }
 }

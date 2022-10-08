@@ -40,8 +40,59 @@
 .subButton {
     margin: 0 1em;
     height: 25%;
+    border: black solid ;
+}
+
+.subButton text {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
 }
 
 .fButton {
     margin:0 1em ;
+}
+
+@media screen and (max-width:480px) {
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsTitle, .newsletter__text {
+        padding: 0 0 0.5em 0;
+        text-align: center;
+        color: black;
+    }
+
+    .fMail {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .fInput {
+        width: 60%;
+        padding-left: 0.5em;
+    }
+
+    .subscribe {
+        padding-bottom: 1em;
+    }
+
+    .subButton {
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subButton  text {
+       font-size: 16px;
+    }
+
+    .fButton text {
+        text-decoration: none;
+    }
+
+
 }
