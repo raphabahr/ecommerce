@@ -1,0 +1,119 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #001720;
+    align-items: center;
+    background-image: url(/assets/img/footerbkfundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutHR {
+    width: 100%;
+    padding: 0;
+    color: gray;
+    border-width: 0.5px;
+    margin-block-end: 0.1em;
+    margin-block-start: 0.1em;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 2em 0 0 2em;
+}
+
+.buttonLogo {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: 200px;
+  padding-left: 2em;
+}
+
+#logoHR {
+    width: 100%;
+}
+
+.footer__adress {
+    color: gray;
+    width: 350px;
+    margin: 0;
+}
+
+.footerLeft {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+#navFooter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1em 0 0;
+}
+
+#navFooter a {
+    text-decoration: none;
+    color: gray;
+}
+
+#navFooter a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footerMenu {
+    padding-left: 3.5em;
+}
+
+.fMenuTitle {
+    font-size: 16px;
+    color: white;
+    width: 120px;
+}
+
+.fList {
+    padding: 0;
+    list-style: none;
+}
+
+.fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.container__copyright {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    padding: 1em 0 0 2em;
+}
+
+.container__copyright p {
+    padding: 0 0 0 3em;
+}

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6edddea7af.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Mono&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>TED Eletrônics</title>
@@ -27,7 +28,7 @@
                 <h3 class="menuItem">About |</h3>
                 <h3 class="menuItem">Shop |</h3>
                 <h3 class="menuItem">Help |</h3>
-                <div class="cart__container">
+                <div class="">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <h3 class="" id="cart">Your Cart </h3>
                 </div>
@@ -35,7 +36,7 @@
         </nav>
 
         <div class="navItem">
-            <img src="./assets/img/tedlogoE.jpg" alt="Logo Ted Electronics">
+            <img src="./assets/img/tedlogonovo.png" alt="Logo Ted Electronics">
             <h1>Ted Electronics is your online store to find everything you need, without leaving the comfort of your
                 home, with great prices and fast deliverys</h1>
             <hr id="hrHeader">
@@ -52,9 +53,11 @@
                 <img src="./assets/img/computer.jpg" alt="" class="galleryImg">
             </div>
         </div>
+
         <div class="container__shop">
-            <a href="https://adsomos.com/" target="_blank">
-                <button class="buyButton">Shop now</button>
+            <a class="HOVER" href="https://adsomos.com/" target="_blank">
+                <span></span>
+                <button><text>Shop Now!</text></button>
             </a>
         </div>
     </header>
@@ -93,10 +96,17 @@
                 curated informational content from news articles to resources and tips. The goal is to provide ongoing
                 value while surfacing important industry- or niche-related topics.</h3>
         </div>
+
         <div class="fMail">
             <input type="text" placeholder="your@email.com" class="fInput">
         </div>
-        <button class="fButton">Subscribe</button>
+
+            <div>
+                <a class="HOVER subButton" href="https://adsomos.com/" target="_blank">
+                    <span></span>
+                    <button class="fButton"><text>Subscrive</text></button>
+                </a>
+            </div>
     </section>
 
     <section class="products">
@@ -105,7 +115,7 @@
             <div class="product__item">
                 <img src="./assets/img/iphone.jpg" alt="">
                 <div class="item__description">
-                    <h3>Product name $300 </h3>
+                    <h3>APPLE IPHONE 13 $300 </h3>
                     <div class="inner-content">
                         <h3></h3>
                         <input type="radio" name="starRating-2" id="star6">
@@ -123,11 +133,10 @@
             </div>
 
             <div class="product__itens">
-
                 <div class="product__itens--container">
                     <img src="./assets/img/drone.jpg" alt="">
                     <div class="item__description">
-                        <h3>Product name $300 </h3>
+                        <h3>DRONE DJI MAVIC $300 </h3>
                         <div class="inner-content product1">
                             <input type="radio" name="starRating-2" id="star6">
                             <label for="star6"><i class="fa fa-star"></i></label>
@@ -146,7 +155,7 @@
                 <div class="product__itens--container">
                     <img src="./assets/img/micro.jpg" alt="">
                     <div class="item__description">
-                        <h3>Product name $300 </h3>
+                        <h3>MICROWAVE BRASTEMP $300 </h3>
                         <div class="inner-content product2">
                             <input type="radio" name="starRating-2" id="star6">
                             <label for="star6"><i class="fa fa-star"></i></label>
@@ -165,7 +174,7 @@
                 <div class="product__itens--container">
                     <img src="./assets/img/soundbar.jpg" alt="">
                     <div class="item__description">
-                        <h3>Product name $300 </h3>
+                        <h3>SOUNDBAR SAMSUNG $300 </h3>
                         <div class="inner-content product3">
                             <input type="radio" name="starRating-2" id="star6">
                             <label for="star6"><i class="fa fa-star"></i></label>
@@ -184,7 +193,7 @@
                 <div class="product__itens--container">
                     <img src="./assets/img/jbl.jpg" alt="">
                     <div class="item__description">
-                        <h3>Product name $300 </h3>
+                        <h3> JBL BOOMBOX $300 </h3>
                         <div class="inner-content product4">
                             <input type="radio" name="starRating-2" id="star6">
                             <label for="star6"><i class="fa fa-star"></i></label>
@@ -218,7 +227,7 @@
         <hr id="aboutHR">
         <div class="footer__logo" onclick="backTop();">
             <button class="buttonLogo">
-                <img class="logo" src="./assets/img/tedlogoE.jpg" alt="Logo da TED eletronicos">
+                <img class="logo" src="./assets/img/tedlogonovo.png" alt="Logo da TED eletronicos">
             </button>
             <hr id="logoHR">
             <p class="footer__adress"> 1717 Harrison St, San Francisco, CA 94103, USA </p>
@@ -228,7 +237,7 @@
                 <div class="footerMenu">
                     <h2 class="fMenuTitle">MAIN MENU</h2>
                     <ul class="fList">
-                        <li class="fListItem"><a href="https://adsomos.com/" class="aa">Home</li></a>
+                        <li class="fListItem"><a href="https://adsomos.com/">Home</li></a>
                         <li class="fListItem"><a href="https://adsomos.com/">About</li></a>
                         <li class="fListItem"><a href="https://adsomos.com/">Shop</li></a>
                         <li class="fListItem"><a href="https://adsomos.com/">Help</li></a>
@@ -253,9 +262,12 @@
                 <div class="footerMenu">
                     <h2 class="fMenuTitle">FIND US ON</h2>
                     <ul class="fList">
-                        <li class="fListItem"> <img src="./assets/img/facebook.png" alt="" class="fIcon"><a href="https://adsomos.com/">Facebook</li></a>
-                        <li class="fListItem"> <img src="./assets/img/twitter.png" alt="" class="fIcon"><a href="https://adsomos.com/">Twitter</li></a>
-                        <li class="fListItem"> <img src="./assets/img/instagram.png" alt="" class="fIcon"><a href="https://adsomos.com/">Instagram</li></a>
+                        <li class="fListItem"> <img src="./assets/img/facebook.png" alt="" class="fIcon"><a
+                                href="https://adsomos.com/">Facebook</li></a>
+                        <li class="fListItem"> <img src="./assets/img/twitter.png" alt="" class="fIcon"><a
+                                href="https://adsomos.com/">Twitter</li></a>
+                        <li class="fListItem"> <img src="./assets/img/instagram.png" alt="" class="fIcon"><a
+                                href="https://adsomos.com/">Instagram</li></a>
                     </ul>
                 </div>
 
@@ -269,6 +281,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/hover.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             pagination: {

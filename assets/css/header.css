@@ -1,0 +1,115 @@
+#headerNav {
+    display: flex;
+}
+
+.headerSearch {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 80%;
+    height: 2em;
+    border: 1px solid black;
+}
+
+.searchIcon {
+    padding-left: 0.5em;
+}
+
+.searchInput::placeholder {
+    color: black;
+}
+
+.searchInput {
+    border: none;
+    background-color: white;
+    padding-left: 1em;
+    color: black;
+    width: 100%;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10em;
+}
+
+.menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.fa-solid, .fa-cart-shopping {
+    padding: 0.8em 0.8em 0.8em 0.8em;
+}
+
+.cart__container {
+    background-color: gray;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#cart {
+    padding: 0 0.5em 0 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navItem img {
+    width: 20%;
+    align-self: center;
+}
+
+.navItem h1 {
+    text-align: center;
+    color: white;
+    padding: 1em;
+    margin: 0;
+}
+
+#hrHeader {
+    width: 20%;
+}
+
+.galleryItem {
+    padding: 50px;
+}
+
+.gallery {
+    padding: 10px 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryImg {
+    width: 100%;
+    max-width: 300px;
+    max-height: 250px;
+    cursor: pointer;
+}
+
+.container__shop {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4em;
+}

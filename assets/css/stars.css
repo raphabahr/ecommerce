@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300i,400,500,600&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
 .inner-content {
    margin: 25px 0;
    display: flex;
@@ -11,12 +10,12 @@
    display: none;
 }
 
-.inner-content i{
+.inner-content i {
    color: #dddddd;
    font-size: 20px;
    cursor: pointer;
 }
-.inner-content  input[type="radio"]:checked ~ label  i{
+.inner-content  input[type="radio"]:checked ~ label  i {
    color: #FFD700;
 }
 

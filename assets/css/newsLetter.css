@@ -1,0 +1,47 @@
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid grey;
+    justify-content: center;
+    align-items: center;
+}
+
+.mewsletter__container {
+    width: 50%;
+    padding-top: 1em;
+}
+
+.newsTitle {
+    padding: 0 0 10px 50px;
+    margin: 0;
+}
+
+.newsletter__text {
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 0 2em 50px;
+    margin: 0;
+}
+
+.fMail {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fInput {
+    height: 25%;
+    width: 40%;
+}
+
+.subButton {
+    margin: 0 1em;
+    height: 25%;
+}
+
+.fButton {
+    margin:0 1em ;
+}
