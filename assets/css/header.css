@@ -44,7 +44,7 @@
 }
 
 .navBottom h3:hover {
-    color: white;
+    color: rgb(62, 62, 226);
 }
 
 .menuItem {
@@ -54,11 +54,15 @@
     font-weight: 400;
     font-size: 20px;
     border-right: 3px solid grey;
-    padding-right: 1.1em;
+    padding-right: 1em;
+}
+
+.menuItem--nt {
+    border: none;
 }
 
 .fa-solid, .fa-cart-shopping {
-    padding: 0.8em 0.8em 0.8em 0.8em;
+    padding: 0.8em 0.8em 0.8em 0.5em;
 }
 
 .cart__container {
@@ -72,7 +76,7 @@
 
 #cart {
     color: white;
-    padding: 0 0.5em 0 0;
+    padding: 0em 1em 0 0;
     margin: 0;
     font-size: 16px;
 }
@@ -89,11 +93,17 @@
     color: white;
     border-radius: 10px;
     cursor: pointer;
+    margin-right: 1em;
+    padding-right: 0.5em;
 }
 
 .cartText:hover {
     background: white;
     color: black;
+}
+
+#cart {
+    padding: 0;
 }
 
 .navItem {
@@ -152,6 +162,14 @@
     display: none;
 }
 
+.container {
+    display: none;
+}
+
+.lista-menu {
+    display: none;
+}
+
 @media screen and (max-width:480px) {
 
     #headerNav {
@@ -160,20 +178,17 @@
         align-items: center;
     }
 
+    .search {
+        height: 2.4em;
+    }
+
     .headerSearch {
         width: 45%;
         padding: 0;
     }
 
     .navBottom {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        margin: 0.5em;
-        padding: 0;
-        border: solid gray 0.5px;
-        border-radius: 10px;
-        background-color: gray;
+        display: none;
     }
 
     .menuItem {
@@ -196,6 +211,10 @@
         width: 50%;
     }
 
+    #cart {
+        padding-right: 0.5em;
+    }
+
     .cartText {
         display: none;
     }
@@ -204,7 +223,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 1em;
+        margin: 0 1em;
         background: gray;
         color: white;
         border-radius: 10px;
@@ -212,17 +231,9 @@
         height: 20%;
     }
 
-    .cartText__mobile:hover {
-        background: white;
-        color: black;
-    }
-
-    .container__shop {
-        padding: 0 0 0.5em 0;
-    }
-
     .container__shop {
         font-size: 16px;
+        padding-top: 2em;
     }
 
     .gallery {
@@ -233,8 +244,90 @@
     }
 
     .galleryItem {
-        width: 50%;
+        width: 80%;
         margin: 0;
         padding: 1em;
     }
+
+    /*-------------------------- Hamburguer -----------------------------*/
+
+    .container {
+        display: block;
+        margin-right: 2.5em;
+        margin-bottom: 4.5em;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .cabecalho__botao:checked~.lista-menu {
+        display: block;
+    }
+
+    .menu__item {
+        padding: 1em;
+    }
+
+    .lista-menu__item:hover {
+        background: rgb(6, 6, 134);
+        color: white;
+    }
+
+    .lista-menu__link:hover {
+        background-color: white;
+    }
+
+    .lista-menu__link {
+        background: blue;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+
+    .lista-menu {
+        display: none;
+        position: fixed;
+        top: 100px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .container__botao:checked~.lista-menu {
+        display: block;
+    }
+
+    .lista-menu__item {
+        padding: 0.5em;
+        background-color: rgb(176, 176, 189);
+        text-align: center;
+    }
+
+    .cabecalho__rotulo {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background: transparent;
+        z-index: 9999;
+    }
+
+    .hb {
+        width: 2em;
+        display: block;
+        border: 3px solid rgb(6, 6, 134);
+        margin: 1em 1em 1em 0.5em;
+        background-color: rgb(6, 6, 134);
+    }
+
+    .hb:hover {
+        border: 3px solid rgb(6, 6, 134);
+        transition: 0.3s;
+    }
+
+
 }

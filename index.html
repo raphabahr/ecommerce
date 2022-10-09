@@ -27,16 +27,56 @@
                 <h3 class="menuItem">Home </h3>
                 <h3 class="menuItem">About </h3>
                 <h3 class="menuItem">Shop </h3>
-                <h3 class="menuItem">Help </h3>
+                <h3 class="menuItem menuItem--nt">Help </h3>
                 <div class="cartText">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <h3 class="" id="cart">Your Cart </h3>
                 </div>
             </div>
 
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Home</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">About</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Shop</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Help</a>
+                </li>
+            </ul>
+
             <div class="cartText__mobile">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <h3 class="" id="cart">Your Cart </h3>
+            </div>
+
+            <div class="container">
+            <input type="checkbox" id="menu" class="cabecalho__botao">
+                <label for="menu" class="cabecalho__rotulo">
+                    <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6"
+                        fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                        <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                            <animate dur="0.2s" attributeName="d"
+                                values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
+                                begin="start.begin" />
+                            <animate dur="0.2s" attributeName="d"
+                                values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
+                                begin="reverse.begin" />
+                        </path>
+                        <rect width="10" height="10" stroke="none">
+                            <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                        </rect>
+                        <rect width="10" height="10" stroke="none">
+                            <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze"
+                                begin="click" />
+                            <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                        </rect>
+                    </svg>
+                </label>
             </div>
         </nav>
 
@@ -51,32 +91,32 @@
 
             <div class="galleryItem">
                 <figure class="snip0015">
-                <img src="./assets/img/TV.jpg" class="galleryImg" alt="Televesion image" >
-                <figcaption>
-                    <h2>I don't know <span>which</span> is worse</h2>
-                    <p>That everyone has his price, or that the price is always so low.</p>
-                    <a href="#"></a>
-                </figcaption>
+                    <img src="./assets/img/TV.jpg" class="galleryImg" alt="Televesion image">
+                    <figcaption>
+                        <h2> The best <span> Television Brands </span> is here </h2>
+                        <p> TED Electronics </p>
+                        <a href="#"></a>
+                    </figcaption>
             </div>
 
             <div class="galleryItem">
                 <figure class="snip0015">
-                <img src="./assets/img/notebook.jpg" class="galleryImg" alt="Notebook image" >
-                <figcaption>
-                    <h2>I don't know <span>which</span> is worse</h2>
-                    <p>That everyone has his price, or that the price is always so low.</p>
-                    <a href="#"></a>
-                </figcaption>
+                    <img src="./assets/img/notebook.jpg" class="galleryImg" alt="Notebook image">
+                    <figcaption>
+                        <h2> The best <span> Notebook Brands </span> is here </h2>
+                        <p> TED Electronics </p>
+                        <a href="#"></a>
+                    </figcaption>
             </div>
 
             <div class="galleryItem">
                 <figure class="snip0015">
-                <img src="./assets/img/computer.jpg" class="galleryImg" alt="Computer image" >
-                <figcaption>
-                    <h2>I don't know <span>which</span> is worse</h2>
-                    <p>That everyone has his price, or that the price is always so low.</p>
-                    <a href="#"></a>
-                </figcaption>
+                    <img src="./assets/img/computer.jpg" class="galleryImg" alt="Computer image">
+                    <figcaption>
+                        <h2> The best <span> Computers Brands </span> is here </h2>
+                        <p> TED Electronics </p>
+                        <a href="#"></a>
+                    </figcaption>
             </div>
         </div>
 
@@ -89,7 +129,7 @@
     </header>
 
     <section class="swiper__container">
-        <h2 class="swiper__titulo">Featured Products </h2>
+        <h2 class="swiper__title">Featured Products </h2>
         <!-- Slider main container -->
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -100,8 +140,7 @@
                 <div class="swiper-slide"><img src="./assets/img/freezer.jpg" alt="Freezer image"></div>
                 <div class="swiper-slide"><img src="./assets/img/play5.jpg" alt="Playstation image"></div>
                 <div class="swiper-slide"><img src="./assets/img/pressurewasher.jpg" alt="Pressure Washer image"></div>
-                <div class="swiper-slide"><img src="./assets/img/gasstove.png" alt="Gas Stove image"></div>
-                ...
+                <div class="swiper-slide"><img src="./assets/img/gasstove.png" alt="Gas Stove image"></div> ...
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -309,12 +348,12 @@
                 <div class="footerMenu">
                     <h2 class="fMenuTitle">FIND US ON</h2>
                     <ul class="fList">
-                        <li class="fListItem"> <img src="./assets/img/facebook.png" alt="Facebook image" class="fIcon"><a
-                                href="https://adsomos.com/">Facebook</li></a>
+                        <li class="fListItem"> <img src="./assets/img/facebook.png" alt="Facebook image"
+                                class="fIcon"><a href="https://adsomos.com/">Facebook</li></a>
                         <li class="fListItem"> <img src="./assets/img/twitter.png" alt="Twitter image" class="fIcon"><a
                                 href="https://adsomos.com/">Twitter</li></a>
-                        <li class="fListItem"> <img src="./assets/img/instagram.png" alt="instagram image" class="fIcon"><a
-                                href="https://adsomos.com/">Instagram</li></a>
+                        <li class="fListItem"> <img src="./assets/img/instagram.png" alt="instagram image"
+                                class="fIcon"><a href="https://adsomos.com/">Instagram</li></a>
                     </ul>
                 </div>
             </nav>
@@ -325,20 +364,11 @@
         </div>
     </footer>
 
+    <script src="./assets/js/hamburguer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/hover.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                enable: 'true',
-            },
-            spaceBetween: 5,
-            slidesPerView: 2,
-        });
-    </script>
+    <script src="./assets/js/swiper.js"></script>
 </body>
 
 </html>

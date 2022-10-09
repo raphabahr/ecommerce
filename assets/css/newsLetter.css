@@ -44,8 +44,10 @@
 }
 
 .subButton {
+    display: flex;
+    align-items: center;
     margin: 0 1em;
-    height: 25%;
+    height: 15px;
     border: black solid ;
 }
 
@@ -56,7 +58,7 @@
 }
 
 .fButton {
-    margin:0 1em ;
+    margin:0 1em;
 }
 
 @media screen and (max-width:480px) {

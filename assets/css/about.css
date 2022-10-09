@@ -5,12 +5,12 @@
 .shopTitle {
     text-align: center;
     margin: 0;
-    padding-top: 1.5em;
+    padding-top: 0.5em;
 }
 
 .shop__text {
     text-align: center;
-    padding: 0.5em 10em 1.5em 10em;
+    padding: 0.5em 10em 0.5em 10em;
     margin: 0;
 }
 

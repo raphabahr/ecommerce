@@ -58,7 +58,6 @@ footer {
 /* -------------------------------media querys------------------------------------- */
 
 @media screen and (max-width:480px) {
-
   footer {
     display: flex;
     flex-direction: column;

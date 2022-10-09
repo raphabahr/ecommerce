@@ -1,4 +1,4 @@
-.swiper__titulo {
+.swiper__title {
     color: black;
     background-color: white;
     text-align: center;
@@ -23,6 +23,10 @@
     cursor: pointer;
 }
 
+.swiper-pagination {
+    padding-bottom: 1em;
+}
+
 .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
     width: 100%;
     left: 0;
@@ -33,7 +37,7 @@
 }
 
 @media screen and (max-width:480px) {
-    .swiper__titulo {
+    .swiper__title {
         padding: 0.5em 0 0 0;
     }
 

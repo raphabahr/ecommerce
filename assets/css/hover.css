@@ -26,6 +26,10 @@
 	color: white;
 	background: #222;
 	overflow: hidden;
+	text-decoration: none;
+
+	display: flex;
+	align-items: center;
 }
 
 .HOVER text {

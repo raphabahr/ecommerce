@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
 figure.snip0015 {
   font-family: 'Raleway', Arial, sans-serif;
   color: #fff;
@@ -113,4 +114,16 @@ figure.snip0015:hover figcaption::before {
   opacity: 1;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+}
+
+@media screen and (max-width:480px) {
+
+    figure.snip0015 {
+        margin: 0;
+        padding: 0;
+    }
+
+    figcaption {
+        display: none;
+    }
 }
