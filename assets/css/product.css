@@ -7,7 +7,7 @@
 .product__item {
     display: flex;
     flex-direction: column;
-    padding-top: 1em;
+    padding: 1em 1em 0 em;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -59,9 +59,16 @@
         justify-content: center;
     }
 
+    .product__item {
+        padding: 1em;
+        width: 50%;
+        max-width: 400px;
+    }
+
     .product__itens {
         align-items: center;
         justify-content: center;
+        padding: 1em;
     }
 
     .product__item img {

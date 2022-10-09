@@ -110,9 +110,8 @@
 
 @media screen and (max-width:480px) {
 
-    .aboutHR {
+    #abourHR__first, #abourHR__second {
         display: none;
-        margin: 0;
     }
 
     .footer__logo {
