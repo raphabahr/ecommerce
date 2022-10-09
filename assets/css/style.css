@@ -55,8 +55,6 @@ footer {
   background-size: cover;
 }
 
-/* -------------------------------media querys------------------------------------- */
-
 @media screen and (max-width:480px) {
   footer {
     display: flex;
