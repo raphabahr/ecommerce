@@ -7,7 +7,7 @@ Meu primeiro projeto ecommerce front-end, totalmente responsivo,  desenvolvido p
 <br>
 
 
-Link do projeto - https://63593dacafa71b008c8488a8--unique-marshmallow-7392f3.netlify.app/
+Link do projeto - https://unique-marshmallow-7392f3.netlify.app/
 -----------------------------
 
 ## Tecnologias usadas - Technologies used
