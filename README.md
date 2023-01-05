@@ -7,7 +7,7 @@ Meu primeiro projeto ecommerce front-end, totalmente responsivo,  desenvolvido p
 <br>
 
 
-Link do projeto -
+Link do projeto - https://63593dacafa71b008c8488a8--unique-marshmallow-7392f3.netlify.app/
 -----------------------------
 
 ## Tecnologias usadas - Technologies used
@@ -21,7 +21,7 @@ Link do projeto -
 ## Serviços usados - Services Used
 
 * Github
-*
+* Netlify
 
 ## Começando - Getting started
 
@@ -33,8 +33,8 @@ Link do projeto -
   - Open the folder in VScode and start Liveview on index.html.
 
 ## Links
-  - Deploy on netlify:
-  - Repository: https://github.com/raphabahr/Portfolio
+  - Deploy on netlify: 
+  - Repository: https://github.com/raphabahr/ecommerce
     - In case of sensitive bugs like security vulnerabilities, please contact
       raphabahr@gmail.com directly instead of using issue tracker. We value your effort
       to improve the security and privacy of this project!
