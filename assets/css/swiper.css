@@ -1,3 +1,4 @@
+
 .swiper__title {
     color: black;
     background-color: white;
@@ -36,9 +37,12 @@
     width: 20%;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
     .swiper__title {
         padding: 0.5em 0 0 0;
     }
 
+    .swiper-slide img,  .swiper-slide-active img, .swiper-slide-next img {
+        width: 70%;
+    }
 }

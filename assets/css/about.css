@@ -1,18 +1,25 @@
+.about__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 .aboutShop {
     color: black;
 }
 
 .shopTitle {
     text-align: center;
-    margin: 0;
-    padding-top: 0.5em;
+    padding-top: 2em;
 }
 
 .shop__text {
+    padding: 1em 6em 2em 6em;
     text-align: center;
-    padding: 0.5em 10em 0.5em 10em;
-    margin: 0;
 }
+
 
 @media screen and (max-width:480px) {
 

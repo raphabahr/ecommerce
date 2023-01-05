@@ -1,3 +1,14 @@
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #001720;
+  align-items: center;
+  background-image: url(/assets/img/footerbkfundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #aboutHR {
     width: 100%;
     padding: 0;
@@ -6,6 +17,7 @@
     border-width: 0.5px;
     margin-block-end: 0.1em;
     margin-block-start: 0.1em;
+    overflow: hidden;
 }
 
 #footerHR {
@@ -39,8 +51,13 @@
 
 .footer__adress {
     color: gray;
-    width: 350px;
+    width: 200px;
     margin: 0;
+    cursor: pointer;
+}
+
+.footer__adress:hover {
+    color: white;
 }
 
 .footerLeft {
@@ -106,68 +123,45 @@
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: left;
+
 }
 
 .copyright{
     font-weight: 300;
     font-size: 14px;
     color: white;
-    padding: 1em 0 0 2em;
+    padding-left: 1em;
 }
 
 .container__copyright p {
     padding: 0 0 0 3em;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
-    #abourHR__first, #abourHR__second {
-        display: none;
-    }
-
-    .footer__logo {
-        padding: 0;
+@media screen and (max-width:768px) {
+    #navFooter {
         display: flex;
+        flex-direction: column;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
+}
 
-    .logo {
-        padding: 0;
-    }
-
-    .footerLeft {
+@media screen and (max-width:768px) {
+    .footer__logo {
         display: flex;
-        flex-direction: column;
-    }
-
-    .footer__adress {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    #navFooter {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        font-size: 14px;
-    }
-
-    .footerMenu {
         padding: 0;
-    }
-
-    .fMenuTitle {
-        font-size: 15px;
-    }
-
-    .fList {
-        margin: 0;
-        padding-top: 0.5em;
-    }
-
-    .copyright {
-        font-size: 12px;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
     }
 }

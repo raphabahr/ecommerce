@@ -1,33 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300i,400,500,600&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-.inner-content {
-   margin: 25px 0;
+.star_rating {
    display: flex;
+   justify-content: center;
+   user-select: none;
 }
 
-.inner-content  input[type="radio"]{
-   display: none;
+.star {
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box;
+   font-size: 2rem;
+   color: #ff9800;
 }
 
-.inner-content i {
-   color: #dddddd;
-   font-size: 20px;
-   cursor: pointer;
-}
-.inner-content  input[type="radio"]:checked ~ label  i {
-   color: #FFD700;
-}
-
-.inner-content {
-   direction: rtl;
-   width: 50%;
-}
-.inner-content h3 {
-   margin: 0 0 15px 0;
-   font-size: 24px;
-}
-
-#star6, #star7 {
-    width: 50%;
+.star:hover {
+   cursor:pointer;
 }

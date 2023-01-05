@@ -28,14 +28,6 @@ nav {
   padding: 10px 10px 10px 10px;
 }
 
-header {
-  background-color: #001720;
-  border-bottom: solid 3px grey;
-  background-image: url(/assets/img/footerbk.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 button {
   text-decoration: none;
   padding: 0;
@@ -45,21 +37,3 @@ button {
   cursor: pointer;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: #001720;
-  align-items: center;
-  background-image: url(/assets/img/footerbkfundo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (max-width:480px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}

@@ -25,7 +25,7 @@
 }
 
 .fMail {
-    width: 50%;
+    width: 60%;
     height: 80px;
     display: flex;
     justify-content: flex-end;
@@ -61,7 +61,7 @@
     margin:0 1em;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
 
     .newsletter {
         flex-direction: column;

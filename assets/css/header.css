@@ -1,5 +1,15 @@
+header {
+  background-color: #001720;
+  border-bottom: solid 3px grey;
+  background-image: url(/assets/img/footerbk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #headerNav {
     display: flex;
+    width: 100%;
+    padding: 1em 0 0 0;
 }
 
 .headerSearch {
@@ -7,7 +17,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 5em;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.navBottom a {
+    text-decoration: none;
+    color: white;
+}
+
+.navBottom a:hover {
+    color: rgb(62, 62, 226);
 }
 
 .search {
@@ -23,35 +48,18 @@
     padding-left: 0.5em;
 }
 
-.searchInput::placeholder {
-    color: black;
-}
-
 .searchInput {
-    border: none;
+    border: none transparent;
+    outline: none;
     background-color: white;
-    padding-left: 1em;
-    color: black;
+    padding-left: 0.5em;
     width: 100%;
     font-size: 20px;
 }
 
-.navBottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10em;
+.searchInput::placeholder {
+    color: black;
 }
-
-.navBottom a {
-    text-decoration: none;
-    color: white;
-}
-
-.navBottom a:hover {
-    color: rgb(62, 62, 226);
-}
-
 
 .menuItem {
     margin-right: 50px;
@@ -67,8 +75,13 @@
     border: none;
 }
 
-.fa-solid, .fa-cart-shopping {
+.fa-solid,
+.fa-cart-shopping {
     padding: 0.8em 0.8em 0.8em 0.5em;
+}
+
+.menu-openner {
+    display: none;
 }
 
 .cart__container {
@@ -99,7 +112,6 @@
     color: white;
     border-radius: 10px;
     cursor: pointer;
-    margin-right: 1em;
     padding-right: 0.5em;
 }
 
@@ -121,6 +133,7 @@
 .navItem img {
     width: 20%;
     align-self: center;
+    padding-top: 2em;
 }
 
 .navItem h1 {
@@ -134,16 +147,22 @@
     width: 20%;
 }
 
-.galleryItem {
-    padding: 50px;
-}
-
 .gallery {
-    padding: 10px 50px 0 50px;
+    padding: 1em 0 0 0 ;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
+
+.galleryItem {
+    padding: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .galleryImg {
     width: 100%;
@@ -156,6 +175,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 4em;
+    width: 100%;
 }
 
 .container__shop text {
@@ -176,95 +196,40 @@
     display: none;
 }
 
-@media screen and (max-width:480px) {
-
-    #headerNav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .search {
-        height: 2.4em;
-    }
-
-    .headerSearch {
-        width: 45%;
-        padding: 0;
-    }
-
+@media screen and (max-width:1024px) {
     .navBottom {
         display: none;
     }
 
-    .menuItem {
-        color: white;
-        border: none;
-        margin: 0;
-        padding: 0 0 0.2em 0;
-        font-size: 16px;
+    #headerNav {
+        display: flex;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    .navItem {
-        font-size: 12px;
+    .headerSearch {
+        width: 90%;
     }
 
-    .navItem h1 {
-        font-size: 16px;
+    .search {
+        width: 90%;
     }
 
     .navItem img {
-        width: 50%;
+        width: 25%;
+        min-width: 250px;
+        padding: 0;
     }
 
-    #cart {
-        padding-right: 0.5em;
-    }
-
-    .cartText {
-        display: none;
-    }
-
-    .cartText__mobile  {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 1em;
-        background: gray;
-        color: white;
-        border-radius: 10px;
-        cursor: pointer;
-        height: 20%;
-    }
-
-    .cartText__mobile a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .container__shop {
-        font-size: 16px;
-        padding-top: 2em;
-    }
-
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .galleryItem {
-        width: 80%;
-        margin: 0;
-        padding: 1em;
+    .header__label {
+        padding-right: 10px;
     }
 
     /*-------------------------- Hamburguer -----------------------------*/
-
     .container {
         display: block;
-        margin-right: 2.5em;
+        padding-right: 4em;
         margin-bottom: 4.5em;
     }
 
@@ -340,6 +305,32 @@
         border: 3px solid rgb(6, 6, 134);
         transition: 0.3s;
     }
+}
 
+@media screen and (max-width:768px) {
 
+    #headerNav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-openner {
+        display: flex;
+        margin-left: 15px;
+        font-size: 16px;
+        background-color: #a9dcff;
+        padding: 2px 5px;
+        border-radius: 5px;
+        max-height: 50px;
+        cursor: pointer;
+    }
+
+    .menu-openner span {
+        margin-right:10px;
+    }
 }

@@ -116,11 +116,16 @@ figure.snip0015:hover figcaption::before {
   transition-delay: 0s;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
 
     figure.snip0015 {
         margin: 0;
         padding: 0;
+        transition: none;
+    }
+
+    .figure.snip0015:hover {
+      opacity: 0;
     }
 
     figcaption {
