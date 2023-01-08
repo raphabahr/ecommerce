@@ -11,8 +11,5 @@
    box-sizing:border-box;
    font-size: 2rem;
    color: #ff9800;
-}
-
-.star:hover {
    cursor:pointer;
 }

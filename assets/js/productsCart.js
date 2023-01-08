@@ -2,13 +2,12 @@ let cart = [];
 let modalQt = 1;
 let modalKey = 0;
 
-const c = (el) => document.querySelector(el);
-const cs = (el) => document.querySelectorAll(el);
+
 
 //                              list of itens
 
 productsJson.map((item, index) => {
-    let productItem = c('.models .product-item').cloneNode(true);
+    let productItem = document.querySelector('.models .product-item').cloneNode(true);
 
     productItem.setAttribute('data-key', index);
     productItem.querySelector('.product-item--img img').src = item.img;
@@ -17,71 +16,70 @@ productsJson.map((item, index) => {
     productItem.querySelector('.product-item--desc').innerHTML = item.description;
     productItem.querySelector('a').addEventListener('click', (e)=> {
         e.preventDefault();
-        let key = e.target.closest('.product-item').getAttribute('data-key');
+        let key = e.target.closest('.product-item').dataset.key; // data getAttribute não funfa em todas nave
         modalQt = 1;
         modalKey = key;
 
-        c('.productBig img').innerHTML = productsJson[key].img;
-        c('.productInfo h1').innerHTML = productsJson[key].name;
-        c('.productInfo--desc').innerHTML = productsJson[key].description;
-        c('.productInfo h1').innerHTML = productsJson[key].name;
-        c('.productInfo--actualPrice').innerHTML = `$ ${productsJson[key].price.toFixed(2)}`;
-        c('.productInfo--size.selected').classList.remove('selected');
-        cs('.productInfo--size').forEach((voltage, voltageIndex)=> {
+        document.querySelector('.productBig img').src = productsJson[key].img;
+        document.querySelector('.productInfo h1').innerHTML = productsJson[key].name;
+        document.querySelector('.productInfo--desc').innerHTML = productsJson[key].description;
+        document.querySelector('.productInfo h1').innerHTML = productsJson[key].name;
+        document.querySelector('.productInfo--actualPrice').innerHTML = `$ ${productsJson[key].price.toFixed(2)}`;
+        document.querySelector('.productInfo--size.selected').classList.remove('selected');
+        document.querySelectorAll('.productInfo--size').forEach((voltage, voltageIndex)=> {
             if(voltageIndex == 2) {
                 voltage.classList.add('selected');
             }
             voltage.querySelector('span').innerHTML = productsJson[key].voltage[voltageIndex];
         });
 
-        c('.productInfo--qt').innerHTML = modalQt;
-
-        c('.productWindowArea').style.opacity = 0;
-        c('.productWindowArea').style.display = 'flex';
+        document.querySelector('.productInfo--qt').innerHTML = modalQt;document.querySelector
+        document.querySelector('.productWindowArea').style.opacity = 0;
+        document.querySelector('.productWindowArea').style.display = 'flex';
         setTimeout(()=>{
-            c('.productWindowArea').style.opacity = 1;
+            document.querySelector('.productWindowArea').style.opacity = 1;
         }, 200);
     });
 
-    c('.product-area').append(productItem);
+    document.querySelector('.product-area').append(productItem);
 });
 
 //                          modal events
 
 function closeModal() {
-    c('.productWindowArea').style.opacity = 0;
+    document.querySelector('.productWindowArea').style.opacity = 0;
     setTimeout(()=>{
-        c('.productWindowArea').style.display = 'none';
+        document.querySelector('.productWindowArea').style.display = 'none';
     }, 500);
 }
 
-cs('.productInfo--cancelButton, .productInfo--cancelMobileButton').forEach((item)=> {
+document.querySelectorAll('.productInfo--cancelButton, .productInfo--cancelMobileButton').forEach((item)=> {
     item.addEventListener('click', closeModal);
 });
 
-c('.productInfo--qtmenos').addEventListener('click',()=> {
+document.querySelector('.productInfo--qtmenos').addEventListener('click',()=> {
     if(modalQt > 1) {
         modalQt--;
-        c('.productInfo--qt').innerHTML = modalQt;
+        document.querySelector('.productInfo--qt').innerHTML = modalQt;
     }
 });
 
-c('.productInfo--qtmais').addEventListener('click', () => {
+document.querySelector('.productInfo--qtmais').addEventListener('click', () => {
     modalQt++;
-    c('.productInfo--qt').innerHTML = modalQt;
+    document.querySelector('.productInfo--qt').innerHTML = modalQt;
 });
 
-cs('.productInfo--size').forEach((voltage, voltageIndex) => {
+document.querySelectorAll('.productInfo--size').forEach((voltage, voltageIndex) => {
     voltage.addEventListener('click', (e)=>{
-        c('.productInfo--size.selected').classList.remove('selected');
+        document.querySelector('.productInfo--size.selected').classList.remove('selected');
         voltage.classList.add('selected');
     });
 });
 
 //                      cart
 
-c('.productInfo--addButton'). addEventListener('click', ()=> {
-    let voltage = parseInt(c('.productInfo--size.selected').getAttribute('data-key'));
+document.querySelector('.productInfo--addButton'). addEventListener('click', ()=> {
+    let voltage = parseInt(document.querySelector('.productInfo--size.selected').getAttribute('data-key'));
 
     let identifier = productsJson[modalKey].id+'@'+voltage;
 
@@ -101,22 +99,22 @@ c('.productInfo--addButton'). addEventListener('click', ()=> {
     closeModal();
 });
 
-c('.menu-openner span').addEventListener('click', ()=> {
+document.querySelector('.menu-openner span').addEventListener('click', ()=> {
     if(cart.length > 0 ){
-        c('aside').style.left = '0';
+        document.querySelector('aside').style.left = '0';
     }
 });
 
-c('.menu-closer').addEventListener('click', () => {
-    c('aside').style.left = '100vw';
+document.querySelector('.menu-closer').addEventListener('click', () => {
+    document.querySelector('aside').style.left = '100vw';
 });
 
 function updateCart() {
-    c('.menu-openner span').innerHTML = cart.length;
+    document.querySelector('.menu-openner span').innerHTML = cart.length;
 
     if(cart.length > 0) {
-        c('aside').classList.add('show');
-        c('.cart').innerHTML = '';
+        document.querySelector('aside').classList.add('show');
+        document.querySelector('.cart').innerHTML = '';
 
         let subtotal = 0;
         let discount = 0;
@@ -126,7 +124,7 @@ function updateCart() {
             let productItem = productsJson.find((item) => item.id == cart[i].id);
             subtotal += productItem.price * cart[i].qt;
 
-            let cartItem = c('.models .cart--item').cloneNode(true);
+            let cartItem = document.querySelector('.models .cart--item').cloneNode(true);
 
             let productVoltage;
             switch(cart[i].voltage) {
@@ -158,19 +156,19 @@ function updateCart() {
                 updateCart();
             });
 
-            c('.cart').append(cartItem);
+            document.querySelector('.cart').append(cartItem);
         }
 
         discount = subtotal * 0.1;
         total = subtotal - discount;
 
-        c('.subtotal span:last-child').innerHTML = `$ ${subtotal.toFixed(2)}`;
-        c('.discount span:last-child').innerHTML = `$ ${discount.toFixed(2)}`;
-        c('.total span:last-child').innerHTML = `$ ${total.toFixed(2)}`;
+        document.querySelector('.subtotal span:last-child').innerHTML = `$ ${subtotal.toFixed(2)}`;
+        document.querySelector('.discount span:last-child').innerHTML = `$ ${discount.toFixed(2)}`;
+        document.querySelector('.total span:last-child').innerHTML = `$ ${total.toFixed(2)}`;
 
     } else {
-        c('aside').classList.remove('show');
-        c('aside').style.left = '100vw';
+        document.querySelector('aside').classList.remove('show');
+        document.querySelector('aside').style.left = '100vw';
     }
 };
 

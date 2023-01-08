@@ -1,15 +1,15 @@
-const allstars = document.querySelectorAll('.star');
+const starblock = document.querySelectorAll('.star_rating');
 
-allstars.forEach((star, i) => {
-    star.onclick = function(){
-        let current_star_level = i + 1;
+starblock.forEach(block => {
+    block.querySelectorAll('.star').forEach((star, i) => {
+        star.onclick = () => {
+            let current_star_level = i + 1;
 
-        allstars.forEach((star, j) => {
-            if (current_star_level >= j + 1) {
-                star.innerHTML = '&#9733';
-            } else {
-                star.innerHTML = '&#9734';
-            }
-        });
-    }
+            console.log(current_star_level);
+
+            block.querySelectorAll('.star').forEach((star, j) => {
+                star.innerHTML = current_star_level >= j + 1 ? '&#9733' : '&#9734';
+            });
+        }
+    });
 });

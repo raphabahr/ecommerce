@@ -81,7 +81,25 @@ header {
 }
 
 .menu-openner {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5em;
+}
+
+.menu-openner span {
+    cursor: pointer;
+}
+
+.menu-openner .desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-right: 0.5em;
 }
 
 .cart__container {
@@ -104,16 +122,6 @@ header {
     color: black;
 }
 
-.cartText {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: gray;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    padding-right: 0.5em;
-}
 
 .cartText:hover {
     background: white;
@@ -182,10 +190,6 @@ header {
     font-size: 20px;
     font-weight: 600;
     color: white;
-}
-
-.cartText__mobile {
-    display: none;
 }
 
 .container {
@@ -307,7 +311,7 @@ header {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:925px) {
 
     #headerNav {
         justify-content: center;
@@ -326,11 +330,12 @@ header {
         background-color: #a9dcff;
         padding: 2px 5px;
         border-radius: 5px;
-        max-height: 50px;
+        max-height: 30px;
         cursor: pointer;
     }
 
     .menu-openner span {
-        margin-right:10px;
+        margin:0;
     }
 }
+

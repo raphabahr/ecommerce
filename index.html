@@ -17,7 +17,6 @@
 
     <header>
         <nav id="headerNav">
-            <div class="menu-openner"><span>0</span>🛒</div>
             <div class="headerSearch">
                 <div class="search">
                     <img src="./assets/img/search.png" width="20" height="20" alt="Icone de procura" class="searchIcon">
@@ -30,16 +29,9 @@
                 <h3 class="menuItem"><a href="https://adsomos.com/" target="_blank">About</h3></a>
                 <h3 class="menuItem"><a href="https://adsomos.com/" target="_blank">Shop</h3></a>
                 <h3 class="menuItem menuItem--nt"><a href="https://adsomos.com/" target="_blank">Help</h3></a>
-                <div class="cartText">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <h3 class="" id="cart"><a href="https://adsomos.com/" target="_blank">Your Cart</h3></a>
-
-                    <div class="cartText__mobile">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h3 class="" id="cart"><a href="https://adsomos.com/" target="_blank">Your Cart</h3></a>
-                    </div>
-                </div>
             </div>
+
+            <div class="menu-openner"><span>&nbsp;0&nbsp;</span>🛒<p>&nbsp;Cart</p> </div>
 
             <!-- HAMBURGUER MOBILE -->
 
@@ -159,7 +151,6 @@
             </aside>
     </header>
 
-
     <section class="swiper__container">
         <h2 class="swiper__title">Featured Products </h2>
         <!-- Slider main container -->
@@ -206,7 +197,7 @@
         </div>
     </section>
 
-    <!--                    products struct             -->
+    <!--                    products structure             -->
     <section class="products">
         <div class="models">
             <div class="product-item">
@@ -226,7 +217,7 @@
                 </div>
             </div>
 
-            <!--                 cart struct                    -->
+            <!--                 cart structure                    -->
             <div class="cart--item">
                 <img src="" />
                 <div class="cart--item-nome">--</div>
@@ -348,11 +339,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/data/products.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/hover.js"></script>
     <script src="./assets/js/swiper.js"></script>
-    <script src="./assets/js/products.js"></script>
     <script src="./assets/js/productsCart.js"></script>
+    <script src="./assets/js/stars.js"></script>
 </body>
 
 </html>

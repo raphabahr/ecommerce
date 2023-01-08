@@ -164,4 +164,21 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
+    .footerMenu {
+        padding: 0;
+    }
+
+    .footer__adress {
+        text-align: center;
+    }
+
+    .fListItem {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fMenuTitle {
+        text-align: center;
+    }
 }
