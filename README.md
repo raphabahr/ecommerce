@@ -1,6 +1,6 @@
 Ecommerce page !
 
-# Ecommerce page - Raphael Bahr - In progress
+# Ecommerce page - Raphael Bahr
 
 # Sobre o projeto - About the project
 Meu primeiro projeto ecommerce front-end, totalmente responsivo,  desenvolvido para me apresentar minha pagina Ecommerce para teste de vaga Front-end.
@@ -11,7 +11,6 @@ Meu primeiro projeto ecommerce front-end, totalmente responsivo,  desenvolvido p
 Link do projeto -
 =======
 Link do projeto - https://unique-marshmallow-7392f3.netlify.app/
->>>>>>> b7890ed46c94ff1faf303c8cc98819587d19fbcb
 -----------------------------
 
 ## Tecnologias usadas - Technologies used
@@ -25,7 +24,7 @@ Link do projeto - https://unique-marshmallow-7392f3.netlify.app/
 ## Serviços usados - Services Used
 
 * Github
-*
+* Netlify
 
 ## Começando - Getting started
 
