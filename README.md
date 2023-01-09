@@ -24,7 +24,7 @@ https://unique-marshmallow-7392f3.netlify.app/
 
 ## Começando - Getting started
 
-* Depende de: Dependency
+* Depende de - Dependency
   - VScode
   - Liveview
 
