@@ -1,15 +1,13 @@
 Ecommerce page !
 
-# Ecommerce page - Raphael Bahr
+# Ecommerce page - Ted Eletronics
 
 # Sobre o projeto - About the project
 Meu primeiro projeto ecommerce front-end, totalmente responsivo,  desenvolvido para me apresentar minha pagina Ecommerce para teste de vaga Front-end.
 <br>
 
-Link do projeto -
-=======
-Link do projeto - https://unique-marshmallow-7392f3.netlify.app/
------------------------------
+Link do projeto - Project link
+https://unique-marshmallow-7392f3.netlify.app/
 
 ## Tecnologias usadas - Technologies used
 
