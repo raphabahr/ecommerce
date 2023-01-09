@@ -6,8 +6,6 @@ Ecommerce page !
 Meu primeiro projeto ecommerce front-end, totalmente responsivo,  desenvolvido para me apresentar minha pagina Ecommerce para teste de vaga Front-end.
 <br>
 
-
-<<<<<<< HEAD
 Link do projeto -
 =======
 Link do projeto - https://unique-marshmallow-7392f3.netlify.app/
